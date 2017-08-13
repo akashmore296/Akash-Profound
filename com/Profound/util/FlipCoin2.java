@@ -12,9 +12,11 @@
  import java.util.Scanner;
  
  public class FlipCoin2 {
+
 	static int times;
 	static float headCtr=0,totalCtr=0;
 	static float tailCtr,percentOfHead,percentOfTails;
+
 	public static void main(String args[]){
 		times=Integer.parseInt(args [0]);
 		for(int i=0;i<times;i++)
