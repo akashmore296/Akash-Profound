@@ -13,10 +13,10 @@
 	
 	public static void main(String arg[]){
 		//taking random values from user
-		double diceOne=(Math.random()*6);
-		double diceTwo=(Math.random()*6);
+		int diceOne=(int)(Math.random()*6+1);
+		int diceTwo=(int)(Math.random()*6+1);
 		//sum of dice
-		double sumOfDice=diceOne+diceTwo;
+		int sumOfDice=diceOne+diceTwo;
 		sumOfDice=Math.round(sumOfDice);
 		System.out.println("Sum of Two Dice is :"+sumOfDice);
 	}
