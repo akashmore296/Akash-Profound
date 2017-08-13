@@ -25,6 +25,22 @@ public class SecondLargeSmall
 		{
 			a[i]=sc.nextInt();
 		}
-		for(i=0;)
+		int largest=a[0];
+		int secondLargest=a[0];
+		for(int i=0;i<noOfElements;i++)
+		{
+			if (a[i]>largest)
+			{			
+				secondLargest=largest;
+				largest=a[i];
+			}
+			else if(a[i]<largest && a[i]>secondLargest)
+			{
+				secondLargest=a[i];
+			}
+		}
+		System.out.println(secondLargest+" is Second largest number");
+	}
+}
 		
 	
