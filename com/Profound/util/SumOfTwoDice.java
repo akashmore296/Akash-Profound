@@ -1,5 +1,5 @@
 /******************************************************************************
- *  Purpose: sum of two dice
+ *  Purpose: Sum of two dice
  *
  *  @author  Akash More
  *  @version 1.0
@@ -12,12 +12,11 @@
  public class SumOfTwoDice {
 	
 	public static void main(String arg[]){
-		//taking random values from user
 		int diceOne=(int)(Math.random()*6+1);
+		System.out.println("Dice 1 :"+diceOne);
 		int diceTwo=(int)(Math.random()*6+1);
-		//sum of dice
+		System.out.println("Dice 2 :"+diceTwo);
 		int sumOfDice=diceOne+diceTwo;
-		sumOfDice=Math.round(sumOfDice);
 		System.out.println("Sum of Two Dice is :"+sumOfDice);
 	}
  }

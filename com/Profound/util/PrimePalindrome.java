@@ -1,14 +1,8 @@
-/*
- * JAVA STYLE GUIDE - SOURCE FILE HEADER STYLE
- * NOTE - A SINGLE BLANK LINE SEPARATES THE TWO BLOCKS i.e. BETWEEN HEADER, PACKAGE, 
- *        IMPORT STATEMENTS, CLASS DECLARATION, etc
- */
+
 
 /******************************************************************************
- *  Compilation:  javac -d bin PrimeChecker.java
- *  Execution:    java -cp bin com.bridgelabz.util.PrimeChecker n
  *  
- *  Purpose: Determines whether or not n is prime.
+ *  Purpose: Prime Palindrome
  *
  *  @author  Akash More
  *  @version 1.0
@@ -21,17 +15,7 @@ package com.Profound.util;
 
 
 public class PrimePalindrome {
-	
-	public static int power(int x,int y) {
-		int product=1;
-		for(int i=0;i<y;i++)
-		{
-			product=product*x;
-		}
-		return product;
-	}
 			
-	
 	public static void main(String args[]) {
 		int flag=0;
 		for(int i=0;i<=100000;i++) {
@@ -56,10 +40,9 @@ public class PrimePalindrome {
 				for(int k=0;temp!=0;k++)
 				{
 					int reminder=temp%10;
-					temp=temp/10;
-					ctr=ctr-k;
-					int p=power(10,ctr);
-					reverse=reminder*p+(reverse);
+					int b=(int) Math.pow(10,ctr-k);
+					reverse=reverse+reminder*b;
+					temp=temp/10;	
 				}
 				//System.out.println("Reverse  "+i+"\t"+reverse);
 				if(reverse==i)
