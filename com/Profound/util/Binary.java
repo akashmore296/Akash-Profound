@@ -23,7 +23,14 @@ public class Binary
 			binaryNumber=binaryNumber+reminder*base;
 			base=base*10;
 		}
-	System.out.println("Binary equivalent of "+decimalNumber+" is "+binaryNumber);
+		temp=binaryNumber;
+		int binaryDigit=0;
+		while(temp!=0)
+		{
+			temp/=10;
+			binaryDigit++;
+		}
+	System.out.println("Binary equivalent of "+decimalNumber+" is "+binaryNumber+" "+binaryDigit);
 	}
 }
 		
