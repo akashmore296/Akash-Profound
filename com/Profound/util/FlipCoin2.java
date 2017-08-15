@@ -1,5 +1,5 @@
 /******************************************************************************
- *  Purpose: coin flip
+ *  Purpose: Coin flip and findout percentage of head vs tails
  *
  *  @author  Akash More
  *  @version 1.0
@@ -9,13 +9,11 @@
  
  package com.Profound.util;
  
- import java.util.Scanner;
- 
  public class FlipCoin2 {
 
 	static int times;
-	static float headCtr=0,totalCtr=0;
-	static float tailCtr,percentOfHead,percentOfTails;
+	static float headCounter=0,totalCounter=0;
+	static float tailCounter,percentOfHead,percentOfTails;
 
 	public static void main(String args[]){
 		times=Integer.parseInt(args [0]);
@@ -23,14 +21,14 @@
 		{
 			if(Math.random()>0.5)
 			{
-			headCtr++;
+				headCounter++;
 			}
-			totalCtr++;
+			totalCounter++;
 		}
-		tailCtr=totalCtr-headCtr;
-		System.out.println("Number of heads is "+headCtr);
-		System.out.println("Number of tails is "+tailCtr);
-		percentOfHead=(headCtr/totalCtr)*100;
+		tailCounter=totalCounter-headCounter;
+		System.out.println("Number of heads is "+headCounter);
+		System.out.println("Number of tails is "+tailCounter);
+		percentOfHead=(headCounter/totalCounter)*100;
 		System.out.println("Percentage of heads is"+percentOfHead);
 		percentOfTails=100-percentOfHead;
 		System.out.println("Percentage of heads is"+percentOfTails);

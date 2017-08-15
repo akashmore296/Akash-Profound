@@ -20,4 +20,3 @@
 		System.out.println("Sum of Two Dice is :"+sumOfDice);
 	}
  }
-		

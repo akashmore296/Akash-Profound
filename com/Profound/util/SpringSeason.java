@@ -10,16 +10,17 @@
 package com.Profound.util;
 
 public class SpringSeason
-{
+{ 
+
 	public static void main(String arg[])
 	{
 		int month=Integer.parseInt(arg[0]);
 		int day=Integer.parseInt(arg[1]);
-		//checking the seasonusing boolean
+		//checking the season using boolean
 		boolean isSpring=(month==3 && day>=20 && day<=31)||
-						(month==4 && day>=1 && day<=30)||
-						(month==5 && day>=1 && day<=31)||
-						(month==6 && day>=1 && day<=20);
+						 (month==4 && day>=1 && day<=30)||
+						 (month==5 && day>=1 && day<=31)||
+						 (month==6 && day>=1 && day<=20);
 		if(isSpring==true)
 		{
 			System.out.println("Season is Spring");
@@ -28,8 +29,5 @@ public class SpringSeason
 		{
 			System.out.println("Season is not Spring");
 		}
-		
-		
 	}
-}
-		
+}	

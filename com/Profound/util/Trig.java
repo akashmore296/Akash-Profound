@@ -23,7 +23,7 @@ public class Trig {
 		double tan=Math.tan(radians);
 		System.out.println("tan ("+degrees+")="+tan);
 		System.out.println(sine+"/"+cos+")="+(sine/cos));
-		double r=sine*sine + cos*cos;
-		System.out.println(sine*sine+"+"+cos*cos+"="+r);
+		double one=sine*sine + cos*cos;
+		System.out.println(sine*sine+"+"+cos*cos+"="+one);
 	}
 }

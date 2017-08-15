@@ -17,15 +17,14 @@ class Quadratic
 	{
 		int a,b,c;
 		double root1,root2,delta;
-		Scanner s=new Scanner(System.in);
-		//taking values of a,b,c from user
+		Scanner Scanner=new Scanner(System.in);
 		System.out.println("Given Quadratic Equation:ax^2+bx+c\n");
 		System.out.println("Enter the a:\n");
-		a=s.nextInt();
+		a=Scanner.nextInt();
 		System.out.println("Enter the b:\n");
-		b=s.nextInt();
+		b=Scanner.nextInt();
 		System.out.println("Enter the c:\n");
-		c=s.nextInt();
+		c=Scanner.nextInt();
 		System.out.println("Given Quadratic Equation: "+a+"x^2+"+b+"x+"+c+"\n");
 		delta=b*b-4*a*c;
 		//calculating roots if Roots are real and unequal

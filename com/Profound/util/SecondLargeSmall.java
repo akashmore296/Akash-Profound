@@ -16,31 +16,30 @@ public class SecondLargeSmall
 	
 	public static void main(String args[])
 	{
-		Scanner sc=new Scanner(System.in);
-		int a[]=new int[100];
+		Scanner Scanner=new Scanner(System.in);
 		System.out.println("Enter the no of elements");
-		int noOfElements=sc.nextInt();
+		int noOfElements=Scanner.nextInt();
+		int array[]=new int[noOfElements];
 		System.out.println("Enter the elements of array");
 		for(int i=0;i<noOfElements;i++)
 		{
-			a[i]=sc.nextInt();
+			array[i]=Scanner.nextInt();
 		}
-		int largest=a[0];
-		int secondLargest=a[0];
+		int largest=array[0];
+		int secondLargest=array[0];
 		for(int i=0;i<noOfElements;i++)
 		{
-			if (a[i]>largest)
+			if (array[i]>largest)
 			{			
 				secondLargest=largest;
-				largest=a[i];
+				largest=array[i];
 			}
-			else if(a[i]<largest && a[i]>secondLargest)
+			else if(array[i]<largest && array[i]>secondLargest)
 			{
-				secondLargest=a[i];
+				secondLargest=array[i];
 			}
 		}
 		System.out.println(secondLargest+" is Second largest number");
 	}
 }
 		
-	

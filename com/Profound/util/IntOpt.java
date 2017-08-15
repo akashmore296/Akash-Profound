@@ -14,15 +14,15 @@ import java.util.Scanner;
 public class IntOpt {
 	
 	public static void main(String arg[]){
-		Scanner sc=new Scanner(System.in);
+		Scanner Scanner=new Scanner(System.in);
 		System.out.println("Enter three no");
-		float a=sc.nextInt();
-		float b=sc.nextInt();
-		float c=sc.nextInt();
+		float a=Scanner.nextInt();
+		float b=Scanner.nextInt();
+		float c=Scanner.nextInt();
 		float operation=a+b*c;
 		System.out.println(a+"+"+b+"*"+c+"="+operation);
-		operation=c+a/b;
-		System.out.println(c+"+"+a+"/"+b+"="+operation);
+		operation=a+b/c;
+		System.out.println(a+"+"+b+"/"+c+"="+operation);
 		operation=a*b+c;
 		System.out.println(a+"*"+b+"+"+c+"="+operation);
 		operation=a%b*c;

@@ -24,16 +24,11 @@ public class PrimeNumber
 			//Determining wheather it is prime no or not
 			for(int j=2;j<i;j++)
 			{
-			if(i%j==0)
-			{
-			flag=1;
-			}
+				if(i%j==0)
+				flag=1;
 			}
 			if(flag!=1)
-			{
-			//printing the prime no
 			System.out.println(i);
-			}
 		}
 	}
 }

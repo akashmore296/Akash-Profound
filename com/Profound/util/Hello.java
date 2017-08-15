@@ -1,7 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d bin PrimeChecker.java
- *  Execution:    java -cp bin com.bridgelabz.util.PrimeChecker n
- *  
  *  Purpose: Hello world
  *
  *  @author  Akash More
@@ -10,12 +7,8 @@
  *
  ******************************************************************************/
 
-/*
- * JAVA STYLE GUIDE - PACKAGE NAMING STYLE
- */
 
 package com.Profound.util;
-
 
 public class Hello {
 

@@ -14,15 +14,15 @@ import java.util.Scanner;
 public class DoubleOpt {
 	
 	public static void main(String arg[]){
-		Scanner sc=new Scanner(System.in);
+		Scanner Scanner=new Scanner(System.in);
 		System.out.println("Enter three no");
-		double a=sc.nextDouble();
-		double b=sc.nextDouble();
-		double c=sc.nextDouble();
+		double a=Scanner.nextDouble();
+		double b=Scanner.nextDouble();
+		double c=Scanner.nextDouble();
 		double operation=a+b*c;
 		System.out.println(a+"+"+b+"*"+c+"="+operation);
-		operation=c+a/b;
-		System.out.println(c+"+"+a+"/"+b+"="+operation);
+		operation=a+b/c;
+		System.out.println(a+"+"+b+"/"+c+"="+operation);
 		operation=a*b+c;
 		System.out.println(a+"*"+b+"+"+c+"="+operation);
 		operation=a%b*c;

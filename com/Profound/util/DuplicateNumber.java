@@ -15,25 +15,24 @@ import java.util.Scanner;
 public class DuplicateNumber{
 		
 	public static void main(String[]args){
-		Scanner s = new Scanner (System.in);
-		//define array for storing the nos
-		int a[]=new int[100];
+		Scanner Scanner = new Scanner (System.in);
 		System.out.println("Enter the no. of elements:");
-		int no=s.nextInt();
+		int number=Scanner.nextInt();
+		int array[]=new int[number];
 		System.out.println("Enter the elements of array:");
 		//store the elements of array
-		for(int i=0;i<no;i++)
+		for(int i=0;i<number;i++)
 		{
-			a[i]=s.nextInt(); 
+			array[i]=Scanner.nextInt(); 
 		}
 		//compare and check wheater nos are same or not
-		for(int i=0;i<no;i++)
+		for(int i=0;i<number;i++)
 		{
-			for(int j=i+1;j<no;j++)
+			for(int j=i+1;j<number;j++)
 			{	
-				if(a[i]==a[j])
+				if(array[i]==array[j])
 				{
-					System.out.println(a[j]+ " is a duplicte no.");
+					System.out.println(array[j]+ " is a duplicte no.");
 				}
 			}
 		}		

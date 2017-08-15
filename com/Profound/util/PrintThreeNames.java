@@ -12,7 +12,6 @@ package com.Profound.util;
 public class PrintThreeNames{
 	
 	public static void main(String args[]){
-		
 		String Str1 = (args[0]);
 		String Str2 = (args[1]);
 	    String Str3 = (args[2]);//taking names from user

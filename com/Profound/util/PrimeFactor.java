@@ -1,5 +1,5 @@
 /******************************************************************************
- *  Purpose: Find out the factors for number
+ *  Purpose: Find out the factors for number using prime factorization
  *
  *  @author  Akash More
  *  @version 1.0
@@ -11,15 +11,15 @@ package com.Profound.util;
 
 public class PrimeFactor
 {
+	
 	public static void main(String args[])
 	{
-		//take no for factorization from user
-		int N=Integer.parseInt(args[0]);
-		System.out.println("Following are the factors of "+N);
+		int Number=Integer.parseInt(args[0]);
+		System.out.println("Following are the factors of "+Number);
 		//finding factors using prime factorization method
-		for(int i=1;i*i<=N;i++)
+		for(int i=1;i*i<=Number;i++)
 		{
-			if(N%i==0)
+			if(Number%i==0)
 			{
 				System.out.println(i);
 			}
