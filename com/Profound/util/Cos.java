@@ -14,6 +14,10 @@ public class Cos {
 	static double cosx,x,temp;
     static int term;
 	
+	/*
+	* Method returns an integer value containing fatorial value of number
+	* but method returns 0 when number is equal to 1.
+	*/	
 	public static int factorial(int number){
 		if(number==0)
 		return 0;

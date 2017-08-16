@@ -14,8 +14,12 @@ public class Sin {
 	static double sinx,x,temp;
     static int term;
 	
+	/*
+	* Method returns an integer value containing fatorial value of number
+	* but method returns 0 when number is equal to 1.
+	*/	
 	public static int factorial(int number){
-		if(number==0)
+		if(number==1)
 		return 0;
 		int fact=1;
 		for(int i=1;i<=number;i++){
