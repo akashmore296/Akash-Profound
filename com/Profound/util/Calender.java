@@ -9,8 +9,6 @@
  
 package com.Profound.util;
 
-import java.util.Scanner;
-
 public class Calender {
 	
 	static int day,year,month;
@@ -70,7 +68,7 @@ public class Calender {
 		if (month == 2 && isLeapYear(year)) 
 			days[month] = 29;
 		//displaying header for calender
-		System.out.println("   " + months[month] + " " + year);
+		System.out.println(" " + months[month] + " " + year+"\n");
         System.out.println(" S\tM\tTu\tW\tTh\tF\tS");
 		int startingDay = day(1, month, year);
 		for (int i = 0; i < startingDay; i++)
@@ -87,27 +85,13 @@ public class Calender {
 	
 	
 	public static void main(String args[]){
-		Scanner Scanner=new Scanner(System.in);
-		System.out.println("Enter your Choice for Calender");
-		System.out.println("1.Findout Day of the week");
-		System.out.println("2.Print Calendar of Month");
-		int choice=Scanner.nextInt();
-		switch(choice) {
-			case 1:	System.out.println("Enter the Date in DD MM YYYY format");
-					day=Scanner.nextInt();
-					month=Scanner.nextInt();
-					year=Scanner.nextInt();
-					dayName=dayOfWeek(day,month,year);
-					System.out.println(dayName);
-					break;
-			case 2:	System.out.println("Enter the Month and Year in MM YYYY format");
-					month=Scanner.nextInt();
-					year=Scanner.nextInt();
-					displayCalender(month,year);
-					break;
-			default:System.out.println("Enter valid input");
-					break;
-		}
+		day=Integer.parseInt(args[0]);
+		month=Integer.parseInt(args[1]);
+		year=Integer.parseInt(args[2]);
+		System.out.println("\n"+dayOfWeek(day,month,year));	
+		System.out.print("\nCalender for");
+		displayCalender(month,year);
+					
 	}
 }
 		
